@@ -1,5 +1,5 @@
 $primary-font: 'Poppins', sans-serif;
-$color-white: #ffffff;
+$color-white: #fff;
 $color-black: #1d1d1d;
 $color-bg-dark: #1d1d1d;
 $color-bg-light: #E5E5E5;
@@ -11,7 +11,7 @@ $transition-speed: 300ms;
 $menu-transition: 0.3s ease;
 $container-padding: 20px;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap';
 
 html {
   position: relative;
@@ -151,6 +151,8 @@ a {
 }
 
 .home {
+  padding-bottom: 60px; // Добавим отступ снизу для секции
+
   &__title {
     margin: 0;
     padding-top: 60px;
@@ -167,10 +169,10 @@ a {
   }
 }
 
-.compare__bikes {
+.compare-bikes {
   margin-top: 92px;
 
-  &-title {
+  &__title {
     margin: 0 0 48px;
     font-weight: 500;
     font-size: 32px;
