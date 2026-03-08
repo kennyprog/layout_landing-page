@@ -10,6 +10,8 @@ $color-shadow: rgba(232, 232, 240, 0.4);
 $transition-speed: 300ms;
 $menu-transition: 0.3s ease;
 $container-padding: 20px;
+$tablet: 768px;
+$desktop: 1200px;
 
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap';
 
@@ -35,6 +37,9 @@ a {
 .header {
   height: 566px;
   background: url(../images/main_background.png) no-repeat 90% center / cover;
+  @media (min-width: $desktop) {
+    height: 711px;
+  }
 
   &__top {
     padding: 0 $container-padding;
@@ -42,6 +47,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: $desktop) {
+    padding: 0 120px;
+  }
   }
 
   &__title {
@@ -51,6 +59,13 @@ a {
     font-size: 36px;
     letter-spacing: -0.04em;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      font-size: 64px;
+  }
+  @media (min-width: $desktop) {
+      font-size: 80px;
+  }
   }
 }
 
@@ -109,6 +124,10 @@ a {
     flex-direction: column;
     gap: 28px;
     padding: 24px $container-padding 0;
+
+    @media (min-width: $desktop) {
+      padding: 24px 121px 0;
+  }
   }
 
   &__link {
