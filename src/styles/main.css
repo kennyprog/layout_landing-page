@@ -1,0 +1,308 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap';
+
+html {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 566px;
+  background-image: url(../images/main_background.png);
+  background-size: cover;
+  background-position: 90% center;
+}
+
+.header__top {
+  padding: 0 20px;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  height: 38px;
+  width: 130px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  transition: 300ms;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+  .icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.icon--menu {
+  margin-left: 28px;
+}
+
+.header__title {
+  margin: 0;
+  padding-top: 330px;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: #E5E5E5;
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease, visibility 0.3s, opacity 0.3s;
+}
+
+.page__menu:target {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu {
+  box-sizing: border-box;
+  background: #c2c2c2;
+}
+
+.menu__links {
+  display: flex;
+  gap: 28px;
+  padding: 24px 20px 0;
+  flex-direction: column;
+}
+
+.menu__link {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.contact-number {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.book {
+  position: relative;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  padding-bottom: 8px;
+}
+
+.book::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #1d1d1d;
+  width: 136px;
+  bottom: 0;
+  left: 0;
+}
+
+.main {
+  background: #1d1d1d;
+  padding: 0 20px;
+}
+
+.home__title {
+  margin: 0;
+  padding-top: 60px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+}
+
+.home__desc {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 140%;
+}
+
+.compare__bikes-title {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+.bike__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.compare__bikes {
+  margin-top: 92px;
+}
+
+.compare__bikes-title {
+  margin: 0 0 48px;
+}
+
+.bike__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.bike__text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.bike__price {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details__title {
+  font-weight: normal;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 92px;
+  margin-bottom: 8px;
+}
+
+.details__block {
+ margin: 40px 0;
+}
+
+.block-img {
+  width: 130px;
+  height: 130px;
+}
+
+.details__img-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.block__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.block_text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 14px 108px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #1d1d1d;
+  background: #fff;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+  background: #fff;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.contacts__title {
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.contacts__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+input {
+  border: none;
+  padding: 0 16px;
+  outline: none;
+  border-radius: 40px;
+  height: 48px;
+  background: #f8f8fa;
+  font-family: Poppins, sans-serif;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.contact__message {
+  border-radius: 16px;
+  border: none;
+  padding: 14px 16px;
+  outline: none;
+  height: 48px;
+  background: #f8f8fa;
+  font-family: Poppins, sans-serif;
+  min-height: 148px;
+}
+
+.contacts__info {
+  margin: 24px 0 120px;
+}
+
+.info__name {
+  margin: 24px 0 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer {
+  background-image: url(../images/footer_img.png);
+  width: 454px;
+  height: 200px;
+}
