@@ -4,6 +4,7 @@
   transition: $menu-transition;
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 }
 
@@ -15,6 +16,7 @@
 
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 
   &--menu {
@@ -68,5 +70,6 @@
 
 .block-img:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
