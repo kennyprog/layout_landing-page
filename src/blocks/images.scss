@@ -47,6 +47,7 @@
   width: 130px;
   height: 130px;
   transition: $menu-transition;
+
   @include tablet {
     width: 392px;
     height: 187px;
@@ -66,6 +67,6 @@
 }
 
 .block-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 

@@ -12,9 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @include tablet {
       padding: 0 72px;
     }
+    
     @include desktop {
       padding: 0 120px;
     }

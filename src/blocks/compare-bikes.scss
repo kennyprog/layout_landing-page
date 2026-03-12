@@ -39,6 +39,7 @@
   &__text {
     font-weight: 400;
     font-size: 16px;
+
     @include tablet {
       width: 392px;
       height: 44px;

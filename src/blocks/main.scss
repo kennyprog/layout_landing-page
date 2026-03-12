@@ -1,8 +1,3 @@
-html {
-  position: relative;
-  overflow-x: hidden;
-}
-
 body {
   font-family: $primary-font;
   margin: 0;
@@ -13,6 +8,19 @@ body {
   background: $color-bg-dark;
 }
 
+html {
+  position: relative;
+  overflow-x: hidden;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+
+    body {
+      overflow: hidden;
+    }
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -20,6 +28,7 @@ a {
 
 .main {
   padding: 0 $container-padding;
+
   @include tablet {
     margin: 0 auto;
     width: 600px;
