@@ -30,7 +30,7 @@
 
   <aside class="menu page__menu" id="menu">
     <div class="header__top">
-      <img src="src/images/blacklogo.png" alt="logo"
+      <img src="src/images/blacklogo.svg" alt="logo"
        class="logo__img">
       <nav class="header__nav">
         <a href="#">
@@ -117,17 +117,18 @@
       <section class="contacts" id="contacts">
         <h2 class="contacts__title">Contact us</h2>
         <div class="contacts__wrapper">
-          <form class="contacts__label" onsubmit="this.reset(); return false;">
+          <form class="contacts__label" onsubmit="this.reset(); return false;" autocomplete="off">
             <label class="contacts__inputs">
               <input type="text" class="name__input"
-              name="name" id="name" placeholder="Name" required autocomplete="off">
+                    name="user_login_field" id="user_login_field"
+                    placeholder="Name" required autocomplete="new-password">
               <input type="email" class="email__input"
-              name="email" id="email"
-              placeholder="Email" required>
-              <textarea class="contact__message" name="" id=""
-              placeholder="Message" required autocomplete="off"></textarea>
+                    name="user_contact_email" id="user_contact_email"
+                    placeholder="Email" required autocomplete="new-password">
+              <textarea class="contact__message" name="user_message" id="user_message"
+                        placeholder="Message" required autocomplete="off"></textarea>
             </label>
-            <button href="#" class="btn">Send</button>
+            <button type="submit" class="btn">Send</button>
           </form>
 
           <div class="contacts__info" id="info">

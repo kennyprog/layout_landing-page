@@ -7,11 +7,12 @@
     font-weight: normal;
     font-size: 32px;
     text-align: center;
-    margin-top: 92px;
+    margin-top: 96px;
     margin-bottom: 8px;
 
     @include desktop {
       padding-top: 144px;
+      margin-top: 0;
       font-size: 64px;
     }
   }
@@ -41,7 +42,7 @@
   &__text {
     font-weight: 400;
     font-size: 16px;
-    
+
     @include desktop {
       width: 672px;
       height: 44px;
